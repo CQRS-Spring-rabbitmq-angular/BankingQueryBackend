@@ -12,9 +12,10 @@ import org.springframework.transaction.annotation.Transactional;
 import com.hatmani.CQRS.entity.*;
 
 import com.hatmani.CQRS.services.AccountService;
-import com.hatmani.commands.events.*;
+//import com.hatmani.commands.events.*;
+import com.hatmani.bankingEvent.*;
 
-
+//import com.hatmani.CQRS.
 
 @Component
 @ProcessingGroup(value = "amqpEvents")
