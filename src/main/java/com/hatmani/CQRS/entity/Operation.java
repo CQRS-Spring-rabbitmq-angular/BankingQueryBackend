@@ -11,6 +11,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.hatmani.CQRS.entity.DTO.operationDTO;
+
 
 
 @Entity
@@ -22,6 +25,7 @@ private operationtype Typeoperation;
 private BigDecimal Amount;
 private Date Dateoperation;
 @ManyToOne
+@JsonIgnore
 private Account acount;
 public Operation() {
 	super();
@@ -70,5 +74,9 @@ public Account getAcount() {
 public void setAcount(Account acount) {
 	this.acount = acount;
 }
-
+public operationDTO toDTO()
+{
+	operationDTO op = new operationDTO(this.Id,this.Typeoperation, this.Amount,this.Dateoperation);
+	return op;
+}
 }

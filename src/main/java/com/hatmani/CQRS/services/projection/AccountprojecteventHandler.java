@@ -41,17 +41,25 @@ public AccountprojecteventHandler() {
 @EventHandler
 public void on(AccountCreatedEvent event)
 {
-	System.out.println("*************************");
-	System.out.println("* ACCOUNT CREATED EVENT *");
-	System.out.println("*************************");
-	System.out.println("event"+event.toString());
-	System.out.println("*************************");
-	System.out.println("id "+event.getId());
-	System.out.println("InitialAccount "+event.getInitialAccount());
-	System.out.println("Currency "+event.getCurrency());
-	System.out.println("Status "+event.getStatus());
+	/*
+	 * System.out.println("*************************");
+	 * System.out.println("* ACCOUNT CREATED EVENT *");
+	 * System.out.println("*************************");
+	 * System.out.println("event"+event.toString());
+	 * System.out.println("*************************");
+	 * System.out.println("id "+event.getId());
+	 * System.out.println("InitialAccount "+event.getInitialAccount());
+	 * System.out.println("Currency "+event.getCurrency());
+	 * System.out.println("Status "+event.getStatus());
+	 */
 	if(!event.getId().isEmpty()) {
-		Account account = new Account(event.getId(),event.getInitialAccount(),event.getCurrency(),StatusAcount.INACTIVE);
+		Account account = new Account(event.getId(),event.getInitialAccount(),
+				event.getCurrency(),StatusAcount.INACTIVE,event.getProprietaire(),
+				event.getDateCreation());
+		
+		System.out.println("*************************");
+		System.out.println("* ACCOUNT CREATED EVENT *");
+		System.out.println("*************************");
 		System.out.println("account "+account.toString());
 		
 		accountservice.SaveAccount(account);

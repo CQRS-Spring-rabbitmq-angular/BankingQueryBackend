@@ -1,6 +1,7 @@
 package com.hatmani.CQRS.entity;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -8,6 +9,8 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import com.hatmani.CQRS.entity.DTO.operationDTO;
 import com.hatmani.bankingEvent.*;
 
 
@@ -20,18 +23,21 @@ private BigDecimal Balance;
 private String Currency;
 @Enumerated(EnumType.STRING)
 private StatusAcount Status;
-
+private String proprietaire;
+private Date dateCreation;
 public Account() {
 	super();
 	// TODO Auto-generated constructor stub
 }
 
-public Account(String id, BigDecimal balance, String currency, StatusAcount status) {
+public Account(String id, BigDecimal balance, String currency, StatusAcount status,String proprietaire,Date dateCreation) {
 	super();
 	this.id = id;
 	Balance = balance;
 	Currency = currency;
 	Status = status;
+	this.proprietaire=proprietaire;
+	this.dateCreation=dateCreation;
 }
 
 @Override
@@ -69,6 +75,22 @@ public StatusAcount getStatus() {
 
 public void setStatus(StatusAcount status) {
 	Status = status;
+}
+
+public String getProprietaire() {
+	return proprietaire;
+}
+
+public void setProprietaire(String proprietaire) {
+	this.proprietaire = proprietaire;
+}
+
+public Date getDateCreation() {
+	return dateCreation;
+}
+
+public void setDateCreation(Date dateCreation) {
+	this.dateCreation = dateCreation;
 }
 
 
