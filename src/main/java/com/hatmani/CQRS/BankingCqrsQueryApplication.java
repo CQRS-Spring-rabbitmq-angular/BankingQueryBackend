@@ -22,7 +22,7 @@ public class BankingCqrsQueryApplication {
 @Bean
 public void intialisation()
 {System.out.println("*****************");
-	_accountService.FindAllAccount().forEach(ac->System.out.println(" acc "+ac.getId()));
+	//_accountService.FindAllAccount().forEach(ac->System.out.println(" acc "+ac.getId()));
 }
 
 	

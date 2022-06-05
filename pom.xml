@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+00<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -10,115 +10,39 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hatmani.CQRS</groupId>
-	<artifactId>CQRS</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>CQRSquery</artifactId>
+	<version>1.0</version>
 	<name>BankingCQRSQuery</name>
-	<description>thymleaf studentproject</description>
-	<!-- <properties>
-		<java.version>11</java.version>
-		<axon.version>3.3.4</axon.version>
-	</properties>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.axonframework</groupId>
-				<artifactId>axon-bom</artifactId>
-				<version>4.5.0</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-amqp</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+	<description>CQRS project</description>
+	<!-- <properties> <java.version>11</java.version> <axon.version>3.3.4</axon.version> 
+		</properties> <dependencyManagement> <dependencies> <dependency> <groupId>org.axonframework</groupId> 
+		<artifactId>axon-bom</artifactId> <version>4.5.0</version> </dependency> 
+		</dependencies> </dependencyManagement> <dependencies> <dependency> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-starter-amqp</artifactId> </dependency> <dependency> 
+		<groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-jpa</artifactId> 
+		</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-web</artifactId> 
+		</dependency> <dependency> <groupId>org.postgresql</groupId> <artifactId>postgresql</artifactId> 
+		<scope>runtime</scope> </dependency> <dependency> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-starter-test</artifactId> <scope>test</scope> </dependency> 
 		<dependency> <groupId>org.springframework.amqp</groupId> <artifactId>spring-rabbit-test</artifactId> 
-			<scope>test</scope> </dependency>
-
-		<dependency>
-			<groupId>org.springframework.amqp</groupId>
-			<artifactId>spring-rabbit</artifactId>
-			
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.axonframework</groupId>
-			<artifactId>axon-spring-boot-starter</artifactId>
-			<version>4.5.2</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.axonframework</groupId>
-			<artifactId>axon-amqp</artifactId>
-		
-			<version>3.4.3</version>
-		</dependency>
-https://mvnrepository.com/artifact/org.axonframework.extensions.amqp/axon-amqp-spring-boot-starter
-<dependency>
-    <groupId>org.axonframework.extensions.amqp</groupId>
-    <artifactId>axon-amqp-spring-boot-starter</artifactId>
-    <version>4.1</version>
-</dependency>
-https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-amqp</artifactId>
-    <version>2.5.2</version>
-</dependency>
-https://mvnrepository.com/artifact/org.axonframework/axon-spring-boot-starter
-<dependency>
-    <groupId>org.axonframework</groupId>
-    <artifactId>axon-spring-boot-starter</artifactId>
-    <version>4.5.2</version>
-</dependency>
-
-         <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-amqp</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.axonframework</groupId>
-			<artifactId>axon-spring-boot-starter</artifactId>
-			<version>${axon.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.axonframework</groupId>
-			<artifactId>axon-amqp</artifactId>
-			<version>${axon.version}</version>
-		</dependency>
-</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
- -->
- <properties>
+		<scope>test</scope> </dependency> <dependency> <groupId>org.springframework.amqp</groupId> 
+		<artifactId>spring-rabbit</artifactId> </dependency> <dependency> <groupId>org.axonframework</groupId> 
+		<artifactId>axon-spring-boot-starter</artifactId> <version>4.5.2</version> 
+		</dependency> <dependency> <groupId>org.axonframework</groupId> <artifactId>axon-amqp</artifactId> 
+		<version>3.4.3</version> </dependency> https://mvnrepository.com/artifact/org.axonframework.extensions.amqp/axon-amqp-spring-boot-starter 
+		<dependency> <groupId>org.axonframework.extensions.amqp</groupId> <artifactId>axon-amqp-spring-boot-starter</artifactId> 
+		<version>4.1</version> </dependency> https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp 
+		<dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-amqp</artifactId> 
+		<version>2.5.2</version> </dependency> https://mvnrepository.com/artifact/org.axonframework/axon-spring-boot-starter 
+		<dependency> <groupId>org.axonframework</groupId> <artifactId>axon-spring-boot-starter</artifactId> 
+		<version>4.5.2</version> </dependency> <dependency> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-starter-amqp</artifactId> </dependency> <dependency> 
+		<groupId>org.axonframework</groupId> <artifactId>axon-spring-boot-starter</artifactId> 
+		<version>${axon.version}</version> </dependency> <dependency> <groupId>org.axonframework</groupId> 
+		<artifactId>axon-amqp</artifactId> <version>${axon.version}</version> </dependency> 
+		</dependencies> <build> <plugins> <plugin> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-maven-plugin</artifactId> </plugin> </plugins> </build> -->
+	<properties>
 		<java.version>11</java.version>
 	</properties>
 
@@ -133,8 +57,8 @@ https://mvnrepository.com/artifact/org.axonframework/axon-spring-boot-starter
 	</dependencyManagement>
 
 	<dependencies>
-	
-	
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -171,39 +95,80 @@ https://mvnrepository.com/artifact/org.axonframework/axon-spring-boot-starter
 			<groupId>org.axonframework</groupId>
 			<artifactId>axon-spring-boot-starter</artifactId>
 			<version>4.5.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.axonframework</groupId>
+					<artifactId>axon-server-connector</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-amqp</artifactId>
-    
-</dependency>
- 
 		<dependency>
-	<groupId>org.axonframework.extensions.amqp</groupId>
-	<artifactId>axon-amqp-spring-boot-starter</artifactId>
-	<version>4.1</version>
-</dependency>
-		<!-- <dependency>
-			<groupId>org.axonframework</groupId>
-			<artifactId>axon-amqp</artifactId>
-			<version>3.3.4</version>
-		</dependency>  -->
-		<!-- <dependency>
-    <groupId>org.springframework.amqp</groupId>
-    <artifactId>spring-rabbit</artifactId>
-   
-</dependency> -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.axonframework.extensions.amqp</groupId>
+			<artifactId>axon-amqp-spring-boot-starter</artifactId>
+			<version>4.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.hatmani</groupId>
+			<artifactId>CQRSevent</artifactId>
+			<version>2.2.1</version>
+			
+			
+		</dependency>
+		
+		
+		<!-- <dependency> <groupId>org.axonframework</groupId> <artifactId>axon-amqp</artifactId> 
+			<version>3.3.4</version> </dependency> -->
+		<!-- <dependency> <groupId>org.springframework.amqp</groupId> <artifactId>spring-rabbit</artifactId> 
+			</dependency> -->
 	</dependencies>
 
 	<build>
 		<plugins>
+			
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-install-plugin</artifactId>
+    <version>2.5.2</version>
+    <executions>
+        <execution>
+            <phase>initialize</phase>
+            <goals>
+                <goal>install-file</goal>
+            </goals>
+            <configuration>
+                <file>lib/CQRSevent-2.2.1.jar</file>
+                <groupId>com.hatmani</groupId>
+                <artifactId>CQRSevent</artifactId>
+                <version>2.2.1</version>
+                <packaging>jar</packaging>
+            </configuration>
+        </execution>
+    </executions>
+</plugin> 
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<layers>
+						<enabled>true</enabled>
+					</layers>
+				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
+
  
+
+
+
 </project>
